@@ -1,5 +1,0 @@
-{
-    "bundles": {
-        "Symfony\\Bundle\\DebugBundle\\DebugBundle": ["dev"]
-    }
-}

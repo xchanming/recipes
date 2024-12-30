@@ -1,5 +1,0 @@
-{
-    "bundles": {
-        "Enqueue\\Bundle\\EnqueueBundle": ["all"]
-    }
-}

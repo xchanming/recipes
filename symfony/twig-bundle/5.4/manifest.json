@@ -1,5 +1,0 @@
-{
-    "bundles": {
-        "Symfony\\Bundle\\TwigBundle\\TwigBundle": ["all"]
-    }
-}
