@@ -18,4 +18,4 @@
     4. The default credentials for administration are <comment>admin</comment> with password <comment>shopware</comment>
     5. Optional: Open the Mail catcher with <comment>symfony open:local:webmail</comment>
 
-  * <fg=blue>Read</> the documentation at <comment>https://developer.shopware.com/</>
+  * <fg=blue>Read</> the documentation at <comment>https://developer.xchanming.com/</>
