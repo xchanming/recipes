@@ -1,0 +1,15 @@
+{
+    "bundles": {
+        "Cicada\\Storefront\\Storefront": [
+            "all"
+        ]
+    },
+    "copy-from-recipe": {
+        "bin/": "%BIN_DIR%/"
+    },
+    "env": {
+        "PROXY_URL": "http://localhost",
+        "CICADA_HTTP_CACHE_ENABLED": "1",
+        "CICADA_HTTP_DEFAULT_TTL": "7200"
+    }
+}
