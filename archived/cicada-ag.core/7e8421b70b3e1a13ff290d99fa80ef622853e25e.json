@@ -1,6 +1,6 @@
 {
     "manifests": {
-        "cicada/core": {
+        "cicada-ag/core": {
             "manifest": {
                 "copy-from-recipe": {
                     "bin/": "%BIN_DIR%/",
@@ -69,34 +69,6 @@
                 ],
                 "composer-scripts": {
                     "assets:install": "symfony-cmd"
-                },
-                "docker-compose": {
-                    "docker-compose.yml": {
-                        "services": [
-                            "database:",
-                            "  image: mysql:${MYSQL_VERSION:-8}-oracle",
-                            "  environment:",
-                            "    MYSQL_DATABASE: ${MYSQL_DATABASE:-cicada}",
-                            "    # You should definitely change the password in production",
-                            "    MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-!ChangeMe!}",
-                            "    MYSQL_USER: ${MYSQL_USER:-cicada}",
-                            "    MYSQL_PASSWORD: ${MYSQL_PASSWORD:-!ChangeMe!}",
-                            "  volumes:",
-                            "    - db-data:/var/lib/mysql:rw",
-                            "    # You may use a bind-mounted host directory instead, so that it is harder to accidentally remove the volume and lose all your data!",
-                            "    # - ./docker/db/data:/var/lib/mysql:rw"
-                        ],
-                        "volumes": [
-                            "db-data:"
-                        ]
-                    },
-                    "docker-compose.override.yml": {
-                        "services": [
-                            "database:",
-                            "  ports:",
-                            "    - \"3306\""
-                        ]
-                    }
                 },
                 "post-install-output": [
                     "  * <fg=blue>Setup</> your repository:",
@@ -671,7 +643,7 @@
                     "executable": false
                 }
             },
-            "ref": "9773c5712bfb422b27b9c605292558fc3e20e4df"
+            "ref": "7e8421b70b3e1a13ff290d99fa80ef622853e25e"
         }
     }
 }

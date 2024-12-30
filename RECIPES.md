@@ -4,15 +4,14 @@ Additional recipes can be found on the [Main Recipes Repository](https://github.
 
 | Package | Latest Recipe | Aliases |
 | --- | --- | --- |
-| [cicada/administration](https://packagist.org/packages/cicada/administration) | [6.7](cicada/administration/6.7) |  |
-| [cicada/core](https://packagist.org/packages/cicada/core) | [6.7](cicada/core/6.7) |  |
-| [cicada/elasticsearch](https://packagist.org/packages/cicada/elasticsearch) | [6.7](cicada/elasticsearch/6.7) |  |
-| [cicada/storefront](https://packagist.org/packages/cicada/storefront) | [6.7](cicada/storefront/6.7) |  |
+| [cicada-ag/administration](https://packagist.org/packages/cicada-ag/administration) | [6.7](cicada-ag/administration/6.7) |  |
+| [cicada-ag/core](https://packagist.org/packages/cicada-ag/core) | [6.7](cicada-ag/core/6.7) |  |
+| [cicada-ag/elasticsearch](https://packagist.org/packages/cicada-ag/elasticsearch) | [6.7](cicada-ag/elasticsearch/6.7) |  |
+| [cicada-ag/storefront](https://packagist.org/packages/cicada-ag/storefront) | [6.7](cicada-ag/storefront/6.7) |  |
 | [doctrine/annotations](https://packagist.org/packages/doctrine/annotations) | [1.0](doctrine/annotations/1.0) |  |
 | [enqueue/dbal](https://packagist.org/packages/enqueue/dbal) | [0.10](enqueue/dbal/0.10) |  |
 | [enqueue/enqueue-bundle](https://packagist.org/packages/enqueue/enqueue-bundle) | [0.10](enqueue/enqueue-bundle/0.10) |  |
 | [enqueue/redis](https://packagist.org/packages/enqueue/redis) | [0.10](enqueue/redis/0.10) |  |
-| [frosh/code-quality-meta](https://packagist.org/packages/frosh/code-quality-meta) | [0.4](frosh/code-quality-meta/0.4) | `code-quality`, `codequality` |
 | [nyholm/psr7](https://packagist.org/packages/nyholm/psr7) | [1.0](nyholm/psr7/1.0) |  |
 | [open-telemetry/opentelemetry-logger-monolog](https://packagist.org/packages/open-telemetry/opentelemetry-logger-monolog) | [1.0](open-telemetry/opentelemetry-logger-monolog/1.0) |  |
 | [pentatrion/vite-bundle](https://packagist.org/packages/pentatrion/vite-bundle) | [6.5](pentatrion/vite-bundle/6.5) |  |

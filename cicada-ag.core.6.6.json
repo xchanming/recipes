@@ -1,6 +1,6 @@
 {
     "manifests": {
-        "cicada/core": {
+        "cicada-ag/core": {
             "manifest": {
                 "copy-from-recipe": {
                     "bin/": "%BIN_DIR%/",
@@ -70,34 +70,6 @@
                 "composer-scripts": {
                     "assets:install": "symfony-cmd"
                 },
-                "docker-compose": {
-                    "docker-compose.yml": {
-                        "services": [
-                            "database:",
-                            "  image: mysql:${MYSQL_VERSION:-8}-oracle",
-                            "  environment:",
-                            "    MYSQL_DATABASE: ${MYSQL_DATABASE:-cicada}",
-                            "    # You should definitely change the password in production",
-                            "    MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-!ChangeMe!}",
-                            "    MYSQL_USER: ${MYSQL_USER:-cicada}",
-                            "    MYSQL_PASSWORD: ${MYSQL_PASSWORD:-!ChangeMe!}",
-                            "  volumes:",
-                            "    - db-data:/var/lib/mysql:rw",
-                            "    # You may use a bind-mounted host directory instead, so that it is harder to accidentally remove the volume and lose all your data!",
-                            "    # - ./docker/db/data:/var/lib/mysql:rw"
-                        ],
-                        "volumes": [
-                            "db-data:"
-                        ]
-                    },
-                    "docker-compose.override.yml": {
-                        "services": [
-                            "database:",
-                            "  ports:",
-                            "    - \"3306\""
-                        ]
-                    }
-                },
                 "post-install-output": [
                     "  * <fg=blue>Setup</> your repository:",
                     "",
@@ -109,17 +81,17 @@
                     "    1. Adjust the <comment>.env</comment> file to your database",
                     "    2. Run <comment>./bin/console system:install --basic-setup</comment>",
                     "    3. Optional: If you use Symfony CLI start the webserver <comment>symfony server:start -d</comment>",
-                    "    3. The default credentials for administration are <comment>admin</comment> with password <comment>shopware</comment>",
+                    "    3. The default credentials for administration are <comment>admin</comment> with password <comment>12345678</comment>",
                     "",
                     "  * <fg=blue>Run</> Cicada with Docker & Symfony CLI:",
                     "",
                     "    1. Start the docker containers with <comment>docker compose up -d</comment>",
                     "    2. Run <comment>symfony console system:install --basic-setup</comment>",
                     "    3. Start the webserver <comment>symfony server:start -d</comment>",
-                    "    4. The default credentials for administration are <comment>admin</comment> with password <comment>shopware</comment>",
+                    "    4. The default credentials for administration are <comment>admin</comment> with password <comment>12345678</comment>",
                     "    5. Optional: Open the Mail catcher with <comment>symfony open:local:webmail</comment>",
                     "",
-                    "  * <fg=blue>Read</> the documentation at <comment>https://developer.shopware.com/</>"
+                    "  * <fg=blue>Read</> the documentation at <comment>https://developer.xchanming.com/</>"
                 ]
             },
             "files": {
@@ -157,7 +129,7 @@
                         "  \"${BIN_DIR}/build-storefront.sh\"",
                         "fi"
                     ],
-                    "executable": false
+                    "executable": true
                 },
                 "bin/ci": {
                     "contents": [
@@ -218,7 +190,7 @@
                         "};",
                         ""
                     ],
-                    "executable": false
+                    "executable": true
                 },
                 "bin/console": {
                     "contents": [
@@ -284,7 +256,7 @@
                         "};",
                         ""
                     ],
-                    "executable": false
+                    "executable": true
                 },
                 "bin/functions.sh": {
                     "contents": [
@@ -422,7 +394,6 @@
                         "    RewriteRule ^ - [L]",
                         "",
                         "    # Rewrite all other queries to the front controller.",
-                        "    RewriteCond %{REQUEST_URI} !^/(theme|media|thumbnail|bundles|css|fonts|js|recovery|sitemap) [NC]",
                         "    RewriteRule ^ %{ENV:BASE}/index.php [L]",
                         "</IfModule>",
                         "",
@@ -672,7 +643,7 @@
                     "executable": false
                 }
             },
-            "ref": "45f0641008e488f1f497690df17b49f9d49f3d72"
+            "ref": "7e8421b70b3e1a13ff290d99fa80ef622853e25e"
         }
     }
 }

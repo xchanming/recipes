@@ -1,12 +1,10 @@
 {
     "aliases": {
-        "code-quality": "frosh/code-quality-meta",
-        "codequality": "frosh/code-quality-meta",
         "console": "symfony/console",
         "debug-bundle": "symfony/debug-bundle",
         "debugbundle": "symfony/debug-bundle",
-        "dev-tools": "cicada/dev-tools",
-        "devtools": "cicada/dev-tools",
+        "dev-tools": "cicada-ag/dev-tools",
+        "devtools": "cicada-ag/dev-tools",
         "framework-bundle": "symfony/framework-bundle",
         "frameworkbundle": "symfony/framework-bundle",
         "log": "symfony/monolog-bundle",
@@ -27,19 +25,19 @@
         "validator": "symfony/validator"
     },
     "recipes": {
-        "cicada/administration": [
+        "cicada-ag/administration": [
             "6.6",
             "6.7"
         ],
-        "cicada/core": [
+        "cicada-ag/core": [
             "6.6",
             "6.7"
         ],
-        "cicada/elasticsearch": [
+        "cicada-ag/elasticsearch": [
             "6.6",
             "6.7"
         ],
-        "cicada/storefront": [
+        "cicada-ag/storefront": [
             "6.6",
             "6.7"
         ],
@@ -54,12 +52,6 @@
         ],
         "enqueue/redis": [
             "0.10"
-        ],
-        "frosh/code-quality-meta": [
-            "0.1",
-            "0.2",
-            "0.3",
-            "0.4"
         ],
         "nyholm/psr7": [
             "1.0"
